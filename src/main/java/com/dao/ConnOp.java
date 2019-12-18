@@ -109,7 +109,6 @@ public class ConnOp {
     public static ResultSet find(String sql){
         Connection connection=null;
         Statement statement=null;
-
         try {
             //加载驱动   将连接的类实例化
             Class.forName(DRIVER);
@@ -122,14 +121,6 @@ public class ConnOp {
             return resultSet;
         }catch (Exception e){
             System.out.println(e.getMessage());
-        }finally {
-            try {
-                statement.close();
-                connection.close();
-            }catch (Exception e){
-                System.out.println(e);
-            }
-
         }
         return null;
 

@@ -1,5 +1,7 @@
 package com.pojo;
 
+import lombok.Data;
+
 import java.util.Date;
 
 /**
@@ -7,6 +9,7 @@ import java.util.Date;
  * @Date: 2019/12/16 21:48
  * @Description: 空间评论
  */
+@Data
 public class QZoneComments {
     /**
      * 评论的id

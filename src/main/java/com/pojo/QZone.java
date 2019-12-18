@@ -28,5 +28,4 @@ public class QZone {
      */
     private String qqShowPhoto;
 
-    private List<QZoneLog> list;
 }
